@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Azarch Design Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { colors: { gold: '#D4AF37', darkBg: '#0F0F11', cardBg: '#1A1A1E' } }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans">
+
+  <header class="fixed w-full top-0 z-50 bg-[#0F0F11]/95 backdrop-blur-md border-b border-gray-800/80">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    
+    <!-- Prominent Rounded Logo Container -->
+    <a href="index.html" class="flex items-center gap-3 group">
+        <div
+            class="h-14 w-14 rounded-full border border-[#D4AF37]/40 bg-[#1A1A1E] flex items-center justify-center p-1.5 shadow-md group-hover:border-[#D4AF37] transition-all duration-300">
+            <img src="logo.jpg" alt="Azarch Design Studio"
+                class="h-full w-full object-contain rounded-full mix-blend-screen transition-transform duration-300 group-hover:scale-110" />
+        </div>
+        <div class="flex flex-col justify-center">
+            <span class="text-2xl font-bold tracking-[0.2em] text-white leading-none">AZARCH</span>
+            <span class="text-[9px] uppercase tracking-[0.3em] text-[#D4AF37] mt-1 font-semibold">Design Studio</span>
+        </div>
+    </a>
+
+    <nav id="nav-menu" class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-gray-300">
+  <a href="index.html" class="nav-link text-[#D4AF37]">Home</a>
+  <a href="about.html" class="nav-link hover:text-[#D4AF37] transition">About Us</a>
+  <a href="services.html" class="nav-link hover:text-[#D4AF37] transition">Services</a>
+  <a href="portfolio.html" class="nav-link hover:text-[#D4AF37] transition">Portfolio</a>
+  <a href="process.html" class="nav-link hover:text-[#D4AF37] transition">Process</a>
+  <a href="contact.html" class="nav-link hover:text-[#D4AF37] transition">Contact</a>
+</nav>
+
+    <a href="contact.html" class="bg-[#D4AF37] text-black font-bold px-6 py-2.5 text-xs uppercase tracking-wider hover:bg-yellow-500 transition shadow-lg">
+      Get In Touch
+    </a>
+
+  </div>
+</header>
+
+  <section class="pt-32 pb-12 text-center bg-cardBg">
+    <p class="text-gold uppercase tracking-widest text-xs font-semibold">What We Offer</p>
+    <h1 class="text-4xl md:text-5xl font-light text-white mt-2">End-to-End Design Solutions</h1>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="bg-cardBg p-8 border border-gray-800">
+      <div class="text-gold text-3xl font-bold mb-4">01</div>
+      <h3 class="text-xl font-semibold text-white mb-3">Architectural Drafting</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">Comprehensive floor plans, elevations, sections, and structural blueprints engineered with complete technical precision.</p>
+      <ul class="text-xs text-gray-400 space-y-2">
+        <li>&bull; Permit-ready documentation</li>
+        <li>&bull; Electrical & plumbing layouts</li>
+        <li>&bull; Detailed construction specs</li>
+      </ul>
+    </div>
+
+    <div class="bg-cardBg p-8 border border-gray-800">
+      <div class="text-gold text-3xl font-bold mb-4">02</div>
+      <h3 class="text-xl font-semibold text-white mb-3">3D Rendering & Modeling</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">Photorealistic 3D interior and exterior renderings that bring conceptual drawings to life before construction begins.</p>
+      <ul class="text-xs text-gray-400 space-y-2">
+        <li>&bull; Virtual walkthroughs</li>
+        <li>&bull; Lighting & shadow simulation</li>
+        <li>&bull; Material & texture exploration</li>
+      </ul>
+    </div>
+
+    <div class="bg-cardBg p-8 border border-gray-800">
+      <div class="text-gold text-3xl font-bold mb-4">03</div>
+      <h3 class="text-xl font-semibold text-white mb-3">Interior Architecture</h3>
+      <p class="text-gray-400 text-sm leading-relaxed mb-4">Bespoke interior solutions tailored to maximize functional layout, lighting harmony, and premium luxury aesthetics.</p>
+      <ul class="text-xs text-gray-400 space-y-2">
+        <li>&bull; Custom furniture curation</li>
+        <li>&bull; Material & finish selection</li>
+        <li>&bull; Space optimization</li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

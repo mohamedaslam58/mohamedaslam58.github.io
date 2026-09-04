@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Azarch Design Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { colors: { gold: '#D4AF37', darkBg: '#0F0F11', cardBg: '#1A1A1E' } }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans">
+
+  <header class="fixed w-full top-0 z-50 bg-[#0F0F11]/95 backdrop-blur-md border-b border-gray-800/80">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    
+    <!-- Prominent Rounded Logo Container -->
+    <a href="index.html" class="flex items-center gap-3 group">
+        <div
+            class="h-14 w-14 rounded-full border border-[#D4AF37]/40 bg-[#1A1A1E] flex items-center justify-center p-1.5 shadow-md group-hover:border-[#D4AF37] transition-all duration-300">
+            <img src="logo.jpg" alt="Azarch Design Studio"
+                class="h-full w-full object-contain rounded-full mix-blend-screen transition-transform duration-300 group-hover:scale-110" />
+        </div>
+        <div class="flex flex-col justify-center">
+            <span class="text-2xl font-bold tracking-[0.2em] text-white leading-none">AZARCH</span>
+            <span class="text-[9px] uppercase tracking-[0.3em] text-[#D4AF37] mt-1 font-semibold">Design Studio</span>
+        </div>
+    </a>
+
+    <nav id="nav-menu" class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-gray-300">
+  <a href="index.html" class="nav-link text-[#D4AF37]">Home</a>
+  <a href="about.html" class="nav-link hover:text-[#D4AF37] transition">About Us</a>
+  <a href="services.html" class="nav-link hover:text-[#D4AF37] transition">Services</a>
+  <a href="portfolio.html" class="nav-link hover:text-[#D4AF37] transition">Portfolio</a>
+  <a href="process.html" class="nav-link hover:text-[#D4AF37] transition">Process</a>
+  <a href="contact.html" class="nav-link hover:text-[#D4AF37] transition">Contact</a>
+</nav>
+
+    <a href="contact.html" class="bg-[#D4AF37] text-black font-bold px-6 py-2.5 text-xs uppercase tracking-wider hover:bg-yellow-500 transition shadow-lg">
+      Get In Touch
+    </a>
+
+  </div>
+</header>
+
+  <section class="pt-32 pb-12 text-center bg-cardBg">
+    <p class="text-gold uppercase tracking-widest text-xs font-semibold">Selected Works</p>
+    <h1 class="text-4xl md:text-5xl font-light text-white mt-2">Architecture & Interior Gallery</h1>
+  </section>
+
+  <section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500" alt="Villa Project" />
+      <div class="p-6">
+        <h3 class="text-2xl font-light text-white">Casa Tulancingo</h3>
+        <p class="text-gold text-sm mt-1">Residential Architecture &bull; 2025</p>
+      </div>
+    </div>
+    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg">
+      <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500" alt="Kitchen Project" />
+      <div class="p-6">
+        <h3 class="text-2xl font-light text-white">Warm Modern Kitchen</h3>
+        <p class="text-gold text-sm mt-1">Interior Design &bull; 2026</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

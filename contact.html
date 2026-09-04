@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Azarch Design Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: { colors: { gold: '#D4AF37', darkBg: '#0F0F11', cardBg: '#1A1A1E' } }
+      }
+    }
+  </script>
+</head>
+<body class="bg-darkBg text-gray-200 font-sans">
+
+  <header class="fixed w-full top-0 z-50 bg-[#0F0F11]/95 backdrop-blur-md border-b border-gray-800/80">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    
+    <!-- Prominent Rounded Logo Container -->
+    <a href="index.html" class="flex items-center gap-3 group">
+        <div
+            class="h-14 w-14 rounded-full border border-[#D4AF37]/40 bg-[#1A1A1E] flex items-center justify-center p-1.5 shadow-md group-hover:border-[#D4AF37] transition-all duration-300">
+            <img src="logo.jpg" alt="Azarch Design Studio"
+                class="h-full w-full object-contain rounded-full mix-blend-screen transition-transform duration-300 group-hover:scale-110" />
+        </div>
+        <div class="flex flex-col justify-center">
+            <span class="text-2xl font-bold tracking-[0.2em] text-white leading-none">AZARCH</span>
+            <span class="text-[9px] uppercase tracking-[0.3em] text-[#D4AF37] mt-1 font-semibold">Design Studio</span>
+        </div>
+    </a>
+
+    <nav id="nav-menu" class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest text-gray-300">
+  <a href="index.html" class="nav-link text-[#D4AF37]">Home</a>
+  <a href="about.html" class="nav-link hover:text-[#D4AF37] transition">About Us</a>
+  <a href="services.html" class="nav-link hover:text-[#D4AF37] transition">Services</a>
+  <a href="portfolio.html" class="nav-link hover:text-[#D4AF37] transition">Portfolio</a>
+  <a href="process.html" class="nav-link hover:text-[#D4AF37] transition">Process</a>
+  <a href="contact.html" class="nav-link hover:text-[#D4AF37] transition">Contact</a>
+</nav>
+
+    <a href="contact.html" class="bg-[#D4AF37] text-black font-bold px-6 py-2.5 text-xs uppercase tracking-wider hover:bg-yellow-500 transition shadow-lg">
+      Get In Touch
+    </a>
+
+  </div>
+</header>
+
+  <section class="pt-32 pb-12 text-center bg-cardBg">
+    <p class="text-gold uppercase tracking-widest text-xs font-semibold">Start Your Project</p>
+    <h1 class="text-4xl md:text-5xl font-light text-white mt-2">Let's Build Something Exceptional</h1>
+  </section>
+
+  <section class="py-20 max-w-3xl mx-auto px-6">
+    <form class="space-y-6 bg-cardBg p-8 border border-gray-800">
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Your Name</label>
+        <input type="text" class="w-full bg-darkBg border border-gray-700 p-3 text-white focus:outline-none focus:border-gold" placeholder="John Doe" />
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Email Address</label>
+        <input type="email" class="w-full bg-darkBg border border-gray-700 p-3 text-white focus:outline-none focus:border-gold" placeholder="john@example.com" />
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-gray-400 mb-2">Project Details</label>
+        <textarea rows="5" class="w-full bg-darkBg border border-gray-700 p-3 text-white focus:outline-none focus:border-gold" placeholder="Tell us about your project requirements..."></textarea>
+      </div>
+      <button type="submit" class="w-full bg-gold text-black font-semibold uppercase py-3 tracking-widest hover:bg-yellow-500 transition">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
