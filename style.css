@@ -1,0 +1,15 @@
+/* 1. Load your font file */
+@font-face {
+  font-family: 'QurovaDEMO';
+  src: url('fonts/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Define a custom utility class */
+.font-qurova {
+  font-family: 'QurovaDEMO', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 2px !important;
+}
