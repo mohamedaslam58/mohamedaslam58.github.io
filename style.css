@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* 1. Load your font file */
 @font-face {
   font-family: 'QurovaDEMO';
@@ -12,4 +17,26 @@
   font-family: 'QurovaDEMO', sans-serif;
   text-transform: lowercase;
   letter-spacing: 2px !important;
+}
+
+.border-radius-default {
+  border-radius: 8px;
+}
+
+.h-56 {
+  height: 56px !important;
+}
+
+.font-size-logo {
+  font-size: 2.5rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .font-size-logo {
+    font-size: 2rem !important;
+  }
+
+  .whatsapp-button {
+    font-size: 90% !important;
+  }
 }
