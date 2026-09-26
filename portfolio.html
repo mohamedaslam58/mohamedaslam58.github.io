@@ -443,21 +443,72 @@
       </div>
     </div>
 
-    <!-- 5. Site Works Accordion -->
-    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
-      <button onclick="toggleAccordion('acc-site', 'icon-site')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
-        <h3 class="text-xl font-light text-white uppercase tracking-wider">Site Works</h3>
-        <span id="icon-site" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+    <!-- 5. Site Works Accordion (With Nested Residential & Interior Sub-Accordions) -->
+<div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+  <button onclick="toggleAccordion('acc-site', 'icon-site')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+    <h3 class="text-xl font-light text-white uppercase tracking-wider">Site Works</h3>
+    <span id="icon-site" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+  </button>
+  
+  <div id="acc-site" class="hidden p-6 border-t border-gray-800/80 space-y-6">
+    
+    <!-- Sub-Accordion 1: Residential -->
+    <div class="border border-gray-800/60 rounded bg-black/30">
+      <button onclick="toggleAccordion('acc-site-res', 'icon-site-res')" class="w-full py-4 px-5 flex items-center justify-between text-left hover:bg-gray-900/40 transition-colors">
+        <h4 class="text-md font-normal text-white uppercase tracking-wide">Residential Site Works</h4>
+        <span id="icon-site-res" class="text-[#D4AF37] transition-transform duration-300">▼</span>
       </button>
-      <div id="acc-site" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+      
+      <div id="acc-site-res" class="hidden p-5 border-t border-gray-800/60 space-y-8">
         <div>
-          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
-            <h4 class="text-lg font-normal text-white tracking-wide">On-Site Execution & Structural Drafting</h4>
-            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Quality Inspection & Fieldwork &bull; 2026</p>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-row md:items-center justify-between gap-1">
+            <h5 class="text-base font-normal text-white tracking-wide border-l-2 border-[#D4AF37] pl-2">Structural Foundation & Residential Framing</h5>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">On-Site Fieldwork & Construction &bull; 2026</p>
           </div>
           <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/images/p1.jpeg" class="w-full h-96 object-contain" alt="Site Work" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (1).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (2).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (3).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 3" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (4).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 4" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (5).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 5" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (6).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 6" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (7).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 7" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (8).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 8" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (9).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 9" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (10).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 10" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (11).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 11" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (12).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 12" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (13).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 13" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (14).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 14" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (15).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 15" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (16).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 16" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (17).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 17" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (18).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 18" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (19).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 19" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (20).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 20" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (21).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 21" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (22).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 22" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (23).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 23" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (24).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 24" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (25).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 25" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (26).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 26" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (27).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 27" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (28).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 28" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (29).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 29" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (30).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 30" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (31).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 31" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (32).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 32" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (33).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 33" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (34).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 34" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (35).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 35" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (36).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 36" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (37).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 37" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (38).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 38" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (39).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 39" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (40).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 40" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (41).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 41" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/residential/r_ (42).jpeg" class="w-full h-96 object-contain" alt="Residential Site Work 42" /></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next text-[#D4AF37]"></div>
@@ -467,21 +518,53 @@
       </div>
     </div>
 
-    <!-- 6. Completed Projects Accordion -->
-    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
-      <button onclick="toggleAccordion('acc-completed', 'icon-completed')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
-        <h3 class="text-xl font-light text-white uppercase tracking-wider">Completed Projects</h3>
-        <span id="icon-completed" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+    <!-- Sub-Accordion 2: Interior -->
+    <div class="border border-gray-800/60 rounded bg-black/30">
+      <button onclick="toggleAccordion('acc-site-int', 'icon-site-int')" class="w-full py-4 px-5 flex items-center justify-between text-left hover:bg-gray-900/40 transition-colors">
+        <h4 class="text-md font-normal text-white uppercase tracking-wide">Interior Fit-out & Execution</h4>
+        <span id="icon-site-int" class="text-[#D4AF37] transition-transform duration-300">▼</span>
       </button>
-      <div id="acc-completed" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+      
+      <div id="acc-site-int" class="hidden p-5 border-t border-gray-800/60 space-y-8">
         <div>
-          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
-            <h4 class="text-lg font-normal text-white tracking-wide">Finished Turnkey Deliveries</h4>
-            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">End-to-End Architectural Solutions</p>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-row md:items-center justify-between gap-1">
+            <h5 class="text-base font-normal text-white tracking-wide border-l-2 border-[#D4AF37] pl-2">Interior Civil & MEP Site Execution</h5>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Fit-out Installation & Finishing &bull; 2026</p>
           </div>
           <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/images/hp1.jpeg" class="w-full h-96 object-contain" alt="Completed Work" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (1).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (2).jpeg" class="w-full h-96 object-contain" alt="White wall with six tall, narrow black geometric metal window grilles letting daylight through; exposed wiring and unfinished openings are visible around the installation. Text at the bottom reads Vivo V50e, Aura Light, and camera details including 26mm, f/1.79, 1/145s, ISO72, 09/29/2026, 17:24." /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (3).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 3" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (4).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 4" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (5).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 5" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (6).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 6" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (7).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 7" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (8).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 8" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (9).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 9" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (10).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 10" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (11).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 11" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (12).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 12" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (13).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 13" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (14).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 14" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (15).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 15" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (16).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 16" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (17).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 17" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (18).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 18" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (19).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 19" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (20).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 20" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (21).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 21" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (22).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 22" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (23).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 23" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (24).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 24" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (25).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 25" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (26).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 26" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (27).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 27" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (28).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 28" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (29).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 29" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (30).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 30" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (31).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 31" /></div>
+              <div class="swiper-slide"><img src="./assets/images/site_works/interior/i_ (32).jpeg" class="w-full h-96 object-contain" alt="Interior Site Work 32" /></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next text-[#D4AF37]"></div>
@@ -490,6 +573,92 @@
         </div>
       </div>
     </div>
+
+  </div>
+</div>
+
+    <!-- 6. Completed Projects Accordion (Before & After Comparison) -->
+<div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+  <button onclick="toggleAccordion('acc-completed', 'icon-completed')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+    <h3 class="text-xl font-light text-white uppercase tracking-wider">Completed Projects</h3>
+    <span id="icon-completed" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+  </button>
+  
+  <div id="acc-completed" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+    
+    <!-- Project 1: Before & After Card -->
+    <div>
+      <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-row md:items-center justify-between gap-1">
+        <div>
+          <h4 class="text-lg font-normal text-white tracking-wide">Luxury Residential Transformation</h4>
+          <p class="text-xs text-gray-400 mt-0.5">Architectural Layout vs. Final On-Site Execution</p>
+        </div>
+        <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Turnkey Completion &bull; 2026</p>
+      </div>
+
+      <!-- Side-by-Side Dual View Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <!-- BEFORE: Design Layout -->
+        <div class="relative group border border-gray-800/80 rounded-lg overflow-hidden bg-black/40">
+          <div class="absolute top-3 left-3 z-10 bg-black/80 border border-gray-700 text-gray-300 px-3 py-1 text-[11px] font-semibold uppercase tracking-widest rounded shadow">
+            Before Design Layout
+          </div>
+          <img src="./assets/images/completed_projects/cp_1.jpeg" class="w-full h-80 object-contain group-hover:scale-105 transition duration-500" alt="Before Design Layout" />
+          <div class="p-3 bg-gray-900/90 border-t border-gray-800 text-xs text-gray-400">
+            <span class="text-white font-medium">Concept Stage:</span> 3D Visualization & Architectural Blueprint
+          </div>
+        </div>
+
+        <!-- AFTER: Field Work Completion -->
+        <div class="relative group border border-[#D4AF37]/40 rounded-lg overflow-hidden bg-black/40">
+          <div class="absolute top-3 left-3 z-10 bg-[#D4AF37] text-black px-3 py-1 text-[11px] font-bold uppercase tracking-widest rounded shadow">
+            After Field Work Completion
+          </div>
+          <img src="./assets/images/completed_projects/cp_2.jpeg" class="w-full h-80 object-contain group-hover:scale-105 transition duration-500" alt="After Field Completion" />
+          <div class="p-3 bg-gray-900/90 border-t border-gray-800 text-xs text-gray-400">
+            <span class="text-white font-medium">Execution Stage:</span> Final Handover & Finished Site Inspection
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Project 2: Carousel View for Multi-Angle Before & After -->
+    <div class="pt-6 border-t border-gray-800/60">
+      <!-- <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-row md:items-center justify-between gap-1">
+        <div>
+          <h4 class="text-lg font-normal text-white tracking-wide">Interior Renovation & Fit-Out</h4>
+          <p class="text-xs text-gray-400 mt-0.5">Swipe through design proposal slides vs. realized site photos</p>
+        </div>
+        <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Commercial Fit-out &bull; 2026</p>
+      </div> -->
+
+      <!-- Swiper Carousel containing Before/After pairs -->
+      <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+        <div class="swiper-wrapper">
+          
+          <!-- Slide Pair 1 -->
+          <div class="swiper-slide">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 p-2 bg-gray-950">
+              <div class="relative">
+                <span class="absolute top-2 left-2 z-10 bg-black/80 border border-gray-700 text-gray-300 px-2.5 py-0.5 text-[10px] font-semibold uppercase">Before Layout</span>
+                <img src="./assets/images/completed_projects/cp_3.jpeg" class="w-full h-80 object-contain" alt="Interior Before Layout" />
+              </div>
+              <div class="relative">
+                <span class="absolute top-2 left-2 z-10 bg-[#D4AF37] text-black px-2.5 py-0.5 text-[10px] font-bold uppercase">After Completion</span>
+                <img src="./assets/images/completed_projects/cp_4.jpeg" class="w-full h-80 object-contain" alt="Interior After Completion" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next text-[#D4AF37]"></div>
+        <div class="swiper-button-prev text-[#D4AF37]"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
   </div>
 </section>
