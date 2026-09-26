@@ -38,3 +38,35 @@ tailwind.config = {
     },
   },
 };
+
+// Toggle Accordion Functionality
+  function toggleAccordion(contentId, iconId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(iconId);
+    
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+      // Trigger Swiper update so layout renders correctly upon expansion
+      window.dispatchEvent(new Event('resize'));
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Initialize Swiper Carousels
+  document.addEventListener('DOMContentLoaded', () => {
+    new Swiper('.portfolioSwiper', {
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  });

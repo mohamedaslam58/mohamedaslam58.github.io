@@ -9,8 +9,12 @@
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/images/favicon.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper JS & Accordion Toggle Script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="index.js"></script>
   <link rel="stylesheet" href="style.css">
+  <!-- Swiper CSS for Carousels -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-darkBg text-gray-200 font-sans">
@@ -25,8 +29,8 @@
         </div>
         <div class="flex flex-col justify-center">
           <span class="font-qurova text-2xl font-bold tracking-[0.2em] text-white leading-none font-size-logo">AZARCH</span>
-          <span class="text-[9px] uppercase tracking-[0.3em] text-[#D4AF37] mt-1 font-semibold"
-            style="text-align: center;">Design Studio</span>
+          <span class="text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] mt-1 font-semibold"
+            style="text-align: center; margin-top: -2px;">Design Studio</span>
         </div>
       </a>
 
@@ -90,281 +94,405 @@
     </div>
   </section>
 
-  <section class="py-16 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p1.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Neo-Classical Grand Mansion</h3>
-        <p class="text-gold text-sm mt-1">Luxury Residential Architecture &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p2.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Contemporary Islamic Cultural Center</h3>
-        <p class="text-gold text-sm mt-1">Religious Architecture • Mosque Design &bull; 2026</p>
+  <section class="py-16 max-w-7xl mx-auto px-6 text-gray-300">
+  
+  <div class="text-center mb-12">
+    <h2 class="text-3xl md:text-4xl font-light text-white tracking-wide uppercase">Portfolio Showcase</h2>
+    <div class="w-16 h-0.5 bg-[#D4AF37] mx-auto mt-3"></div>
+  </div>
+
+  <!-- Main Accordion Container -->
+  <div class="space-y-4">
+
+    <!-- 1. Luxury Villas Accordion -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-villas', 'icon-villas')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Luxury Villas</h3>
+        <span id="icon-villas" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      <div id="acc-villas" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+        <!-- Carousel 1 -->
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Neo-Classical Grand Mansion</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Luxury Residential Architecture &bull; 2025</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_1.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_2.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_3.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_4.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_5.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_6.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/1/lv_7.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
+
+        <!-- Carousel 2 -->
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Modern Tropical Residence</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Luxury Contemporary Architecture &bull; 2025</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_1.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_2.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_3.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_4.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_5.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_6.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_7.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_8.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/2/lv_9.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
+
+        <!-- Carousel 3 -->
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Modern Cantilever Villa</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Architectural Elegance &bull; 2025</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/3/lv_1.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/3/lv_2.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/3/lv_3.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
+
+        <!-- Carousel 4 -->
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">White Monolith Villa</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Classic Luxury Architecture &bull; 2025</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/4/lv_1.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/4/lv_2.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/4/lv_3.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/4/lv_4.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/luxury_villas/4/lv_5.jpeg" class="w-full h-96 object-contain" alt="Villa Exterior 1" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p3.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Ahamed Ibrahim Residence</h3>
-        <p class="text-gold text-sm mt-1">Modern Elevation • Erwadi &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p5.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Mohamed Riyas Residence</h3>
-        <p class="text-gold text-sm mt-1">Contemporary Villa Design &bull; 2026</p>
+    <!-- 2. Commercial Buildings Accordion -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-commercial', 'icon-commercial')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Commercial Buildings</h3>
+        <span id="icon-commercial" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      <div id="acc-commercial" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Corporate Tech Tower Elevation</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Commercial High-Rise &bull; 2026</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/1/cb_1.jpeg" class="w-full h-96 object-contain" alt="Commercial 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/1/cb_2.jpeg" class="w-full h-96 object-contain" alt="Commercial 1" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/1/cb_3.jpeg" class="w-full h-96 object-contain" alt="Commercial 1" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Urban Commercial Arcade</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Modern architectural design &bull; 2026</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/2/cb_1.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/2/cb_2.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/2/cb_3.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Miracle Beauty Salon</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Luxury salon storefront design &bull; 2026</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/3/cb_1.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/3/cb_2.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/3/cb_3.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/3/cb_4.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+              <div class="swiper-slide"><img src="./assets/images/commercial_buildings/3/cb_5.jpeg" class="w-full h-96 object-contain" alt="Commercial 2" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p6.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Triple-Story Narrow Plot Residence</h3>
-        <p class="text-gold text-sm mt-1">Compact Urban Architecture &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p7.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Elite Matriculation Higher Secondary School</h3>
-        <p class="text-gold text-sm mt-1">Institutional Gate Architecture • Erwadi &bull; 2026</p>
+
+    <!-- 3. Masjid Accordion -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-masjid', 'icon-masjid')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Masjid</h3>
+        <span id="icon-masjid" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      <div id="acc-masjid" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Contemporary Islamic Cultural Center</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Religious Architecture &bull; Mosque Design &bull; 2026</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/masjid/1/m1.jpeg" class="w-full h-96 object-contain" alt="Masjid Design" /></div>
+              <div class="swiper-slide"><img src="./assets/images/masjid/1/m2.jpeg" class="w-full h-96 object-contain" alt="Masjid Design" /></div>
+              <div class="swiper-slide"><img src="./assets/images/masjid/1/m3.jpeg" class="w-full h-96 object-contain" alt="Masjid Design" /></div>
+              <div class="swiper-slide"><img src="./assets/images/masjid/1/m4.jpeg" class="w-full h-96 object-contain" alt="Masjid Design" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p11.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Curved Corner Contemporary Villa</h3>
-        <p class="text-gold text-sm mt-1">Modern Elevation & Lighting &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p12.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Modern Vertical Elevation Residence</h3>
-        <p class="text-gold text-sm mt-1">Urban Duplex Architecture &bull; 2026</p>
+    <!-- 4. Interior Accordion (Nested Structure) -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-interior', 'icon-interior')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Interior</h3>
+        <span id="icon-interior" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      
+      <div id="acc-interior" class="hidden p-6 border-t border-gray-800/80 space-y-6">
+        
+        <!-- Nested Level 1: Residential -->
+        <div class="border border-gray-800/60 rounded bg-black/30">
+          <button onclick="toggleAccordion('acc-res', 'icon-res')" class="w-full py-4 px-5 flex items-center justify-between text-left hover:bg-gray-900/40">
+            <h4 class="text-md font-[#D4AF37] text-white uppercase tracking-wide">Residential</h4>
+            <span id="icon-res" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+          </button>
+          
+          <div id="acc-res" class="hidden p-5 border-t border-gray-800/60 space-y-8">
+            
+            <!-- Sub-Level 2: Living Hall -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">Living Hall</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Royal Palace Concept</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/living_area/lv_1.jpeg" class="w-full h-80 object-contain" alt="Living Room" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/living_area/lv_2.jpeg" class="w-full h-80 object-contain" alt="Living Room" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/living_area/lv_3.jpeg" class="w-full h-80 object-contain" alt="Living Room" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/living_area/lv_4.jpeg" class="w-full h-80 object-contain" alt="Living Room" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+            <!-- Sub-Level 2: TV Unit -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">TV Unit</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Modern Design</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/tv_unit/tv_1.jpeg" class="w-full h-80 object-contain" alt="TV Unit" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/tv_unit/tv_2.jpeg" class="w-full h-80 object-contain" alt="TV Unit" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/tv_unit/tv_3.jpeg" class="w-full h-80 object-contain" alt="TV Unit" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/tv_unit/tv_4.jpeg" class="w-full h-80 object-contain" alt="TV Unit" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/tv_unit/tv_5.jpeg" class="w-full h-80 object-contain" alt="TV Unit" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+            <!-- Sub-Level 2: Staircase -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">Grand Spiral Staircase</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Custom Marble & Brass Detail</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/staircase/st_1.jpeg" class="w-full h-80 object-contain" alt="Staircase Design" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/residential/staircase/st_2.jpeg" class="w-full h-80 object-contain" alt="Staircase Design" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Nested Level 1: Commercial -->
+        <div class="border border-gray-800/60 rounded bg-black/30">
+          <button onclick="toggleAccordion('acc-com-int', 'icon-com-int')" class="w-full py-4 px-5 flex items-center justify-between text-left hover:bg-gray-900/40">
+            <h4 class="text-md font-[#D4AF37] text-white uppercase tracking-wide">Commercial</h4>
+            <span id="icon-com-int" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+          </button>
+          
+          <div id="acc-com-int" class="hidden p-5 border-t border-gray-800/60 space-y-8">
+            
+            <!-- Sub-Level 2: Offices -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">Executive Boardroom & Offices</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Corporate Interior</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/office/o_1.jpeg" class="w-full h-80 object-contain" alt="Office Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/office/o_2.jpeg" class="w-full h-80 object-contain" alt="Office Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/office/o_3.jpeg" class="w-full h-80 object-contain" alt="Office Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/office/o_4.jpeg" class="w-full h-80 object-contain" alt="Office Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/office/o_5.jpeg" class="w-full h-80 object-contain" alt="Office Interior" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+            <!-- Sub-Level 2: Gym -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">Luxury Health & Fitness Club</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Wellness Space Design</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_1.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_2.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_3.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_4.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_5.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_6.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_7.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_8.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_9.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_10.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_11.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/gym/g_12.jpeg" class="w-full h-80 object-contain" alt="Gym Interior" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+            <!-- Sub-Level 2: Toilet -->
+            <div>
+              <div class="mb-3 pb-2 border-b border-gray-800/60 flex items-center justify-between">
+                <h5 class="text-sm uppercase tracking-wider text-white border-l-2 border-[#D4AF37] pl-2 font-medium">Modern Executive Restroom</h5>
+                <span class="text-[11px] text-[#D4AF37] uppercase tracking-widest">Commercial toilet design</span>
+              </div>
+              <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/toilet/t1.jpeg" class="w-full h-80 object-contain" alt="Toilet Interior" /></div>
+                  <div class="swiper-slide"><img src="./assets/images/interior/commercial/toilet/t2.jpeg" class="w-full h-80 object-contain" alt="Toilet Interior" /></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next text-[#D4AF37]"></div>
+                <div class="swiper-button-prev text-[#D4AF37]"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p13.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Sloped Roof Stone Facade Residence</h3>
-        <p class="text-gold text-sm mt-1">Modern Tropical Villa • Plot 16 &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p21.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Commercial Workspace Interior</h3>
-        <p class="text-gold text-sm mt-1">Open Layout Office & Workstations &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p22.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Corporate Conference Room</h3>
-        <p class="text-gold text-sm mt-1">Executive Boardroom & AV Meeting Space &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p23.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Modern Kitchen & Dining</h3>
-        <p class="text-gold text-sm mt-1">Open-Concept Modular Kitchen & Island Bar &bull; 2026</p>
+    <!-- 5. Site Works Accordion -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-site', 'icon-site')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Site Works</h3>
+        <span id="icon-site" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      <div id="acc-site" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">On-Site Execution & Structural Drafting</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">Quality Inspection & Fieldwork &bull; 2026</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/p1.jpeg" class="w-full h-96 object-contain" alt="Site Work" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p26.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Modern Bedroom Interior</h3>
-        <p class="text-gold text-sm mt-1">Master Suite Accent Wall & Ambient Lighting &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p27.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Luxury Bathroom Design</h3>
-        <p class="text-gold text-sm mt-1">En-Suite Vanity & Wet Area Partition &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p28.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Contemporary Exterior Elevation</h3>
-        <p class="text-gold text-sm mt-1">Residential Facade & Architectural Lighting &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p29.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Commercial Reception Area</h3>
-        <p class="text-gold text-sm mt-1">Corporate Lobby & Waiting Lounge &bull; 2026</p>
+    <!-- 6. Completed Projects Accordion -->
+    <div class="border border-gray-800 bg-cardBg rounded-lg overflow-hidden">
+      <button onclick="toggleAccordion('acc-completed', 'icon-completed')" class="w-full py-5 px-6 flex items-center justify-between text-left hover:bg-gray-900/50 transition-colors">
+        <h3 class="text-xl font-light text-white uppercase tracking-wider">Completed Projects</h3>
+        <span id="icon-completed" class="text-[#D4AF37] transition-transform duration-300">▼</span>
+      </button>
+      <div id="acc-completed" class="hidden p-6 border-t border-gray-800/80 space-y-10">
+        <div>
+          <div class="mb-4 pb-2 border-b border-gray-800/60 flex flex-col md:flex-column md:items-center justify-between gap-1">
+            <h4 class="text-lg font-normal text-white tracking-wide">Finished Turnkey Deliveries</h4>
+            <p class="text-xs text-[#D4AF37] uppercase tracking-widest font-medium">End-to-End Architectural Solutions</p>
+          </div>
+          <div class="swiper portfolioSwiper rounded-lg overflow-hidden border border-gray-800">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./assets/images/hp1.jpeg" class="w-full h-96 object-contain" alt="Completed Work" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-[#D4AF37]"></div>
+            <div class="swiper-button-prev text-[#D4AF37]"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p30.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Executive Office Suite</h3>
-        <p class="text-gold text-sm mt-1">Private Cabin & Desk Station &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p31.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Modern Living Room Concept</h3>
-        <p class="text-gold text-sm mt-1">Media Wall & Seating Arrangement &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p33.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Living Room Feature Wall</h3>
-        <p class="text-gold text-sm mt-1">Marble Wall Panel & Low-Profile Media Unit &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p34.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Living Room & Media Unit</h3>
-        <p class="text-gold text-sm mt-1">Marble Feature Wall & Lattice Partition &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p35.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Dining & Kitchen Connection</h3>
-        <p class="text-gold text-sm mt-1">Wash Station & Modular Kitchen View &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p36.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Hand-Wash Vanity Station</h3>
-        <p class="text-gold text-sm mt-1">Fluid Mirror & Moroccan Tile Wall &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p37.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Upper Mezzanine Balcony</h3>
-        <p class="text-gold text-sm mt-1">Glass Railing & Cascading Chandelier &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p38.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Formal Living Lounge</h3>
-        <p class="text-gold text-sm mt-1">Cream Leather Seating & Full-Height Windows &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p39.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Living Room Partition & TV Unit</h3>
-        <p class="text-gold text-sm mt-1">Carved Wooden Screen & Marble Backdrop &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p40.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Equinoxx Academy Reception</h3>
-        <p class="text-gold text-sm mt-1">Fluted Wood Paneling & Backlit Branding &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p41.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Executive Lounge Suite</h3>
-        <p class="text-gold text-sm mt-1">Slatted Timber Accent Wall & Sectional Seating &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p42.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Private Manager Nook</h3>
-        <p class="text-gold text-sm mt-1">Framed Timber Desk & 3D Backlit Wall &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p43.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Executive Director Office</h3>
-        <p class="text-gold text-sm mt-1">Marble Feature Wall & Halo Ring Lighting &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p44.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Al Masjidul Jamiya Kuthba Pallivasal</h3>
-        <p class="text-gold text-sm mt-1">Option-2 Interior Concept – Erwadi &bull; 2026</p>
-      </div>
-    </div>
-
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p45.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Villa Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">Proposed Residential Building</h3>
-        <p class="text-gold text-sm mt-1">Elevation Design for Mr. Lingam @ Erwadi &bull; 2025</p>
-      </div>
-    </div>
-    <div class="relative group overflow-hidden border border-gray-800 bg-cardBg border-radius-default">
-      <img src="./assets/images/p46.jpeg" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500"
-        alt="Kitchen Project" />
-      <div class="p-6">
-        <h3 class="text-2xl font-light text-white">MIRACLE Store Exterior Design</h3>
-        <p class="text-gold text-sm mt-1">Modern Retail Storefront with Arched Entryways & Backlit Branding &bull; 2026
-        </p>
-      </div>
-    </div>
-
-  </section>
+  </div>
+</section>
   <footer class="bg-cardBg border-t border-gray-800/80 text-gray-400 text-sm pt-12 pb-8">
     <div class="max-w-7xl mx-auto px-6">
       <!-- Footer Main Container: Mobile Single Column / Desktop 4 Columns -->
@@ -376,7 +504,7 @@
             <img src="assets/images/favicon.png" alt="Azarch Logo" class="h-10 w-auto" />
             <div>
               <h3 class="font-qurova text-2xl font-bold tracking-tight text-white leading-none">azarch</h3>
-              <p class="text-[9px] tracking-[0.25em] text-gold font-semibold uppercase mt-1">Design Studio</p>
+              <p class="text-[7px] tracking-[0.25em] text-gold font-semibold uppercase mt-1" style="text-align: center; margin-top: -4px;">Design Studio</p>
             </div>
           </div>
 
