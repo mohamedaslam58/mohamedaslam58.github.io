@@ -57,16 +57,24 @@ tailwind.config = {
 
   // Initialize Swiper Carousels
   document.addEventListener('DOMContentLoaded', () => {
-    new Swiper('.portfolioSwiper', {
-      loop: true,
-      spaceBetween: 10,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  new Swiper('.portfolioSwiper', {
+    loop: true,
+    spaceBetween: 10,
+
+    // Enable Autoplay Configuration
+    autoplay: {
+      delay: 3000, // Time in milliseconds between slide transitions (3 seconds)
+      disableOnInteraction: false, // Prevents autoplay from stopping after manual swipes
+      pauseOnMouseEnter: true, // Optional: pauses slide transition when user hovers over it
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
+});
